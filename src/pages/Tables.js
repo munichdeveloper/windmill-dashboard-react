@@ -18,7 +18,7 @@ import {
 } from '@windmill/react-ui'
 import { EditIcon, TrashIcon } from '../icons'
 
-import response from '../utils/demo/tableData'
+import response from '../utils/demo/modules'
 // make a copy of the data, for the second table
 const response2 = response.concat([])
 
