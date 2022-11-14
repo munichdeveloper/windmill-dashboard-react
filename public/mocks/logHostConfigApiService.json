@@ -1,0 +1,14 @@
+[
+  {
+    "createDateTime": "2022-11-08T00:46:39",
+    "primaryKey": "HostConfigApiService",
+    "secondKey": "updateSetting",
+    "jsonData": "{\"headers\":\"{\\\"User-Agent\\\":[\\\"ScPrime-Agent\\\"],\\\"Authorization\\\":[\\\"Basic OjAxNWViZWM1ZmExYTk5Nzk1N2ZjMWU0M2Y4Y2JkZmUw\\\"],\\\"Accept\\\":[\\\"application/json\\\"]}\",\"scpStorageProviderApiAdress\":\"192.168.178.47\",\"settingValue\":\"4636350628206.00\",\"settingName\":\"minstorageprice\",\"responseCode\":204}"
+  },
+  {
+    "createDateTime": "2022-11-08T00:46:39",
+    "primaryKey": "HostConfigApiService",
+    "secondKey": "updateSetting",
+    "jsonData": "{\"headers\":\"{\\\"User-Agent\\\":[\\\"ScPrime-Agent\\\"],\\\"Authorization\\\":[\\\"Basic OjAxNWViZWM1ZmExYTk5Nzk1N2ZjMWU0M2Y4Y2JkZmUw\\\"],\\\"Accept\\\":[\\\"application/json\\\"]}\",\"scpStorageProviderApiAdress\":\"192.168.178.47\",\"settingValue\":\"4636350628206.00\",\"settingName\":\"collateral\",\"responseCode\":204}"
+  }
+]

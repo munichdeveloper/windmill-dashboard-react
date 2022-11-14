@@ -1,5 +1,5 @@
 import React, { lazy } from 'react'
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 import AccessibleNavigationAnnouncer from './components/AccessibleNavigationAnnouncer'
 import CreateAccount from './pages/CreateAccount'
 import ForgotPassword from './pages/ForgotPassword'
@@ -17,7 +17,7 @@ function App() {
           <Route path="/create-account" component={CreateAccount} />
           <Route path="/forgot-password" component={ForgotPassword} />
           <Route path="/app" component={Layout} />
-          <Redirect exact from="/" to="/login" />
+          <Redirect exact from="/" to="/app" />
         </Switch>
       </Router>
     </>
