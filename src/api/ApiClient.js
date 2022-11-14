@@ -14,5 +14,5 @@ export async function getWalletBalances() {
 }
 
 export async function getLogEntriesByKey(key) {
-    return await axios.get(`/log/${key}`)
+    return await axios.get(`/api/log/${key}`)
 }
