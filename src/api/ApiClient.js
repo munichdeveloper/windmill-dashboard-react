@@ -14,5 +14,17 @@ export async function getWalletBalances() {
 }
 
 export async function getLogEntriesByKey(key) {
-    return await axios.get(`/api/log/${key}`)
+    return await axios.get(`/log/${key}`)
+}
+
+export async function getConfigValue(key) {
+    return await axios.get(`/setting/${key}`)
+}
+
+export async function getConfigValues() {
+    return await axios.get('setting');
+}
+
+export async function setConfigValue(key,value) {
+    return await axios.put(`/setting/${key}`, value)
 }
