@@ -37,26 +37,26 @@ const routes = [
         component: Config, // view rendered
     },
     {
-        path: '/forms',
-        component: Forms,
+      path: '/forms',
+      component: Forms,
     },
-    {
-        path: '/cards',
-        component: Cards,
-    },
-    {
-        path: '/charts',
-        component: Charts,
-    },
-    {
-        path: '/buttons',
-        component: Buttons,
-    },
-    {
-        path: '/modals',
-        component: Modals,
-    },
-    {
+  {
+    path: '/cards',
+    component: Cards,
+  },
+  {
+    path: '/charts',
+    component: Charts,
+  },
+  {
+    path: '/buttons',
+    component: Buttons,
+  },
+  {
+    path: '/modals',
+    component: Modals,
+  },
+  {
     path: '/tables',
     component: Tables,
   },
