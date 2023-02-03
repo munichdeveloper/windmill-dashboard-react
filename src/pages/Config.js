@@ -1,7 +1,7 @@
 import PageTitle from '../components/Typography/PageTitle'
 import React, {useCallback, useEffect, useState} from 'react'
 import {Table, TableBody, TableCell, TableContainer, TableHeader, TableRow,} from '@windmill/react-ui'
-import {getBoolConfigValue, getConfigValues, setBoolConfigValue, setStringConfigValue} from "../api/ApiClient";
+import {getBoolConfigValue, getConfigValues, restart, setBoolConfigValue, setStringConfigValue} from "../api/ApiClient";
 import {toast, ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -63,7 +63,8 @@ function Config() {
         await setStringConfigValue('app_apipassword', app_apipassword);
         await setBoolConfigValue('app_enableLogging', app_enableLogging);
 
-        notifySuccessfullySaved();
+        await notifySuccessfullySaved();
+        await restart();
     }
 
     const handleChange = async (event) => {

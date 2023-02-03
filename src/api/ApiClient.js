@@ -46,3 +46,7 @@ export async function setBoolConfigValue(key, value) {
     }
     return await axios.put(`/api/setting/bool/${key}`, value, config)
 }
+
+export async function restart() {
+    return await axios.post(`/api/admin/restart`);
+}
