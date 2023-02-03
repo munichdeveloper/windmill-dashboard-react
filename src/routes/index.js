@@ -1,4 +1,5 @@
-import { lazy } from 'react'
+import {lazy} from 'react'
+import Config from "../pages/Config";
 
 // use lazy for better code splitting, a.k.a. load faster
 const Dashboard = lazy(() => import('../pages/Dashboard'))
@@ -23,35 +24,39 @@ const Blank = lazy(() => import('../pages/Blank'))
  * `routes/sidebar.js`
  */
 const routes = [
-  {
-    path: '/dashboard', // the url
-    component: Dashboard, // view rendered
-  },
-  {
-    path: '/log', // the url
-    component: Log, // view rendered
-  },
-  {
-    path: '/forms',
-    component: Forms,
-  },
-  {
-    path: '/cards',
-    component: Cards,
-  },
-  {
-    path: '/charts',
-    component: Charts,
-  },
-  {
-    path: '/buttons',
-    component: Buttons,
-  },
-  {
-    path: '/modals',
-    component: Modals,
-  },
-  {
+    {
+        path: '/dashboard', // the url
+        component: Dashboard, // view rendered
+    },
+    {
+        path: '/log', // the url
+        component: Log, // view rendered
+    },
+    {
+        path: '/config', // the url
+        component: Config, // view rendered
+    },
+    {
+        path: '/forms',
+        component: Forms,
+    },
+    {
+        path: '/cards',
+        component: Cards,
+    },
+    {
+        path: '/charts',
+        component: Charts,
+    },
+    {
+        path: '/buttons',
+        component: Buttons,
+    },
+    {
+        path: '/modals',
+        component: Modals,
+    },
+    {
     path: '/tables',
     component: Tables,
   },

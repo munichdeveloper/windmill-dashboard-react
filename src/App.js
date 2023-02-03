@@ -1,5 +1,5 @@
-import React, { lazy } from 'react'
-import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
+import React, {lazy} from 'react'
+import {HashRouter as Router, Redirect, Route, Switch} from 'react-router-dom'
 import AccessibleNavigationAnnouncer from './components/AccessibleNavigationAnnouncer'
 import CreateAccount from './pages/CreateAccount'
 import ForgotPassword from './pages/ForgotPassword'
@@ -9,7 +9,7 @@ const Layout = lazy(() => import('./containers/Layout'))
 
 function App() {
   return (
-    <>
+      <>
       <Router>
         <AccessibleNavigationAnnouncer />
         <Switch>
