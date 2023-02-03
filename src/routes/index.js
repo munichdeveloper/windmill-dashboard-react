@@ -37,16 +37,16 @@ const routes = [
         component: Config, // view rendered
     },
     {
-      path: '/forms',
-      component: Forms,
+        path: '/forms',
+        component: Forms,
     },
-  {
-    path: '/cards',
-    component: Cards,
-  },
-  {
-    path: '/charts',
-    component: Charts,
+    {
+        path: '/cards',
+        component: Cards,
+    },
+    {
+        path: '/charts',
+        component: Charts,
   },
   {
     path: '/buttons',
