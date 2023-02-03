@@ -7,7 +7,7 @@
     "tailwind:dev": "tailwindcss build src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
     "tailwind:build": "cross-env NODE_ENV=production postcss src/assets/css/tailwind.css -o src/assets/css/tailwind.output.css",
     "prestart": "npm run tailwind:dev",
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "prebuild": "npm run tailwind:build",
     "build": "react-scripts build",
     "cz": "git-cz",
@@ -31,6 +31,7 @@
     "react-focus-lock": "2.4.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "4.0.2",
+    "react-toastify": "^8.0.0",
     "react-transition-group": "4.4.1"
   },
   "devDependencies": {
