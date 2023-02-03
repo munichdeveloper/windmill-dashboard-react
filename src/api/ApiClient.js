@@ -2,31 +2,31 @@ import axios from "axios";
 
 export async function getHostConfig() {
   return await axios
-      .get(`/api/scpconfig/host`)
+      .get(`/scpconfig/host`)
 }
 
 export async function getModuleStatus(name) {
-    return await axios.get(`/api/status/${name}`)
+    return await axios.get(`/status/${name}`)
 }
 
 export async function getWalletBalances() {
-    return await axios.get(`/api/wallet`)
+    return await axios.get(`/wallet`)
 }
 
 export async function getLogEntriesByKey(key) {
-    return await axios.get(`/api/log/${key}`)
+    return await axios.get(`/log/${key}`)
 }
 
 export async function getStringConfigValue(key) {
-    return await axios.get(`/api/setting/string/${key}`)
+    return await axios.get(`/setting/string/${key}`)
 }
 
 export async function getBoolConfigValue(key) {
-    return await axios.get(`/api/setting/bool/${key}`)
+    return await axios.get(`/setting/bool/${key}`)
 }
 
 export async function getConfigValues() {
-    return await axios.get('/api/setting');
+    return await axios.get('/setting');
 }
 
 export async function setStringConfigValue(key, value) {
@@ -35,7 +35,7 @@ export async function setStringConfigValue(key, value) {
             'Content-Type': "plain/text"
         }
     }
-    return await axios.put(`/api/setting/string/${key}`, value, config)
+    return await axios.put(`/setting/string/${key}`, value, config)
 }
 
 export async function setBoolConfigValue(key, value) {
@@ -44,5 +44,5 @@ export async function setBoolConfigValue(key, value) {
             'Content-Type': "application/json"
         }
     }
-    return await axios.put(`/api/setting/bool/${key}`, value, config)
+    return await axios.put(`/setting/bool/${key}`, value, config)
 }
